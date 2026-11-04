@@ -1,0 +1,991 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ExamFlow — Assessment &amp; Selection Support</title>
+<meta name="description" content="Friendly, end-to-end support for applications, assessments, evaluations, selection decisions, results and certificates for schools, universities and institutions.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="progress" id="progress"></div>
+
+<!-- ================= NAV ================= -->
+<header class="nav" id="nav">
+  <div class="wrap nav-inner">
+    <a class="brand" href="#home" aria-label="ExamFlow home">
+      <span class="brand-mark">EF</span>
+      <span class="brand-text">ExamFlow<em>assessment support</em></span>
+    </a>
+
+    <nav class="nav-links" id="navLinks">
+      <a href="#services">Services</a>
+      <a href="#who-its-for">Who it's for</a>
+      <a href="#how">How it works</a>
+      <a href="#pricing">Pricing</a>
+      <a class="nav-login" href="login.html">Sign in</a>
+      <a class="btn btn-sm btn-primary nav-cta" href="#contact">Talk to our team</a>
+    </nav>
+
+    <div class="nav-tools">
+      <button class="icon-btn" id="themeToggle" aria-label="Toggle theme" title="Toggle theme">
+        <svg class="ico-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z"/></svg>
+        <svg class="ico-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M19.1 4.9l-1.4 1.4M6.3 17.7l-1.4 1.4"/></svg>
+      </button>
+      <button class="icon-btn burger" id="burger" aria-label="Menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main>
+
+<!-- ================= HERO ================= -->
+<section class="hero" id="home">
+  <div class="hero-glow"></div>
+  <div class="hero-grid-bg"></div>
+
+  <div class="wrap hero-grid">
+    <div class="hero-copy">
+      <span class="badge"><i class="dot"></i> A little less stress. A lot more clarity.</span>
+      <h1>From first application to final decision, <span class="grad">we make it easier.</span></h1>
+      <p>
+        Friendly, hands-on support for applications, assessments and selections—so your team
+        can focus on people, not paperwork.
+      </p>
+      <div class="hero-actions">
+        <a href="#contact" class="btn btn-primary">Let's talk about your needs <span aria-hidden="true">↗</span></a>
+        <a href="#journey" class="btn btn-ghost">See how it works <span aria-hidden="true">↓</span></a>
+      </div>
+      <div class="hero-stats">
+        <div><b>01</b><small>One-to-one guidance</small></div>
+        <div><b>02</b><small>Clear next steps</small></div>
+        <div><b>03</b><small>Support that fits</small></div>
+      </div>
+    </div>
+
+    <div class="hero-visual reveal">
+      <div class="mock">
+        <div class="mock-top">
+          <span class="mock-dots"><i></i><i></i><i></i></span>
+          <span class="mock-title">A clearer view of your process</span>
+          <span class="live-pill"><i></i>Sample</span>
+        </div>
+
+        <div class="mock-stats">
+          <div><b>248</b><small>Applications</small></div>
+          <div><b>32</b><small>To review</small></div>
+          <div><b>4</b><small>Simple steps</small></div>
+        </div>
+
+        <div class="mock-chart">
+          <div class="mock-chart-head">
+            <span>Progress through each stage</span>
+            <span class="muted-sm">this program</span>
+          </div>
+          <div class="bars">
+            <span style="height:38%"></span><span style="height:62%"></span>
+            <span style="height:48%"></span><span style="height:80%"></span>
+            <span style="height:56%"></span><span style="height:94%"></span>
+            <span style="height:70%"></span>
+          </div>
+        </div>
+
+        <div class="mock-foot">
+          <div class="donut"><span>87%</span></div>
+          <div class="mock-foot-text">
+            <b>Applications are moving forward</b>
+            <small>Clear tasks · Shared updates · Helpful support</small>
+          </div>
+          <span class="chip ok">Published</span>
+        </div>
+      </div>
+
+      <!-- floating mini cards -->
+      <div class="float-card float-a">
+        <div class="float-ico ok">✓</div>
+        <div><b>Review completed</b><small>Next step shared</small></div>
+      </div>
+      <div class="float-card float-b">
+        <div class="float-ico indigo">✦</div>
+        <div><b>Everyone in sync</b><small>Team update · Just now</small></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= LOGOS ================= -->
+<section class="logos">
+  <div class="wrap">
+    <p class="logos-label">Thoughtful support for teams working with</p>
+    <div class="logos-row">
+      <span>Admissions</span><span>Assessments</span><span>Certification</span>
+      <span>Talent selection</span><span>Learning programs</span>
+    </div>
+  </div>
+</section>
+
+<!-- ================= JOURNEY ================= -->
+<section class="section journey-section" id="journey">
+  <div class="wrap">
+    <div class="journey-intro reveal">
+      <div>
+        <span class="eyebrow">A better experience, step by step</span>
+        <h2>One clear journey.<br><span class="grad">No one left guessing.</span></h2>
+      </div>
+      <p>Every program is different. We bring the moving pieces together, keep people informed and help your team stay on top of what comes next.</p>
+    </div>
+    <div class="journey-grid">
+      <article class="journey-card reveal">
+        <span class="journey-number">01</span>
+        <div class="journey-icon">✳</div>
+        <h3>Apply with confidence</h3>
+        <p>Make it easy to understand what's needed, where to apply and what to expect.</p>
+        <span class="journey-link">A welcoming first step <span>↗</span></span>
+      </article>
+      <article class="journey-card reveal">
+        <span class="journey-number">02</span>
+        <div class="journey-icon">◷</div>
+        <h3>Know what's next</h3>
+        <p>Keep schedules, reminders and important updates clear for every participant.</p>
+        <span class="journey-link">Less back-and-forth <span>↗</span></span>
+      </article>
+      <article class="journey-card reveal">
+        <span class="journey-number">03</span>
+        <div class="journey-icon">⌕</div>
+        <h3>Review as a team</h3>
+        <p>Help reviewers stay organized, apply your criteria and move decisions forward.</p>
+        <span class="journey-link">A more focused review <span>↗</span></span>
+      </article>
+      <article class="journey-card reveal">
+        <span class="journey-number">04</span>
+        <div class="journey-icon">↗</div>
+        <h3>Move forward together</h3>
+        <p>Share outcomes and next steps in a way people can understand and act on.</p>
+        <span class="journey-link">A thoughtful finish <span>↗</span></span>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PROBLEM → SOLUTION ================= -->
+<section class="section problem-section">
+  <div class="wrap">
+    <div class="sec-head center reveal">
+      <span class="eyebrow">The reality</span>
+      <h2>Keep every step organized, <span class="grad">from application to outcome.</span></h2>
+      <p>Coordinating assessments and selections can be a lot of work. We make the process clearer and easier to manage.</p>
+    </div>
+
+    <div class="problem-grid">
+      <div class="problem-card reveal">
+        <div class="problem-icon">📋</div>
+        <h4>Scattered applications</h4>
+        <p>Information gets repeated, missed or spread across too many files.</p>
+        <div class="problem-fix"><b>We help:</b> organize applications and check details</div>
+      </div>
+      <div class="problem-card reveal">
+        <div class="problem-icon">🔓</div>
+        <h4>Unclear responsibilities</h4>
+        <p>It can be hard to know who needs to review each application or result.</p>
+        <div class="problem-fix"><b>We help:</b> keep tasks and reviews clearly assigned</div>
+      </div>
+      <div class="problem-card reveal">
+        <div class="problem-icon">⚖️</div>
+        <h4>Time-consuming evaluations</h4>
+        <p>Reviewing responses and applying selection criteria can take too long.</p>
+        <div class="problem-fix"><b>We help:</b> make evaluations and shortlisting more organized</div>
+      </div>
+      <div class="problem-card reveal">
+        <div class="problem-icon">📉</div>
+        <h4>People left waiting</h4>
+        <p>Applicants need clear updates about schedules, decisions and next steps.</p>
+        <div class="problem-fix"><b>We help:</b> keep updates and outcomes easy to follow</div>
+      </div>
+      <div class="problem-card reveal">
+        <div class="problem-icon">🎭</div>
+        <h4>Hard-to-check achievements</h4>
+        <p>Confirming results and certificates should not mean extra paperwork.</p>
+        <div class="problem-fix"><b>We help:</b> share clear, verifiable results and certificates</div>
+      </div>
+      <div class="problem-card reveal">
+        <div class="problem-icon">🕵️</div>
+        <h4>Updates hard to track</h4>
+        <p>When decisions and changes are spread out, it is easy to lose the full picture.</p>
+        <div class="problem-fix"><b>We help:</b> keep important decisions and progress together</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= SERVICES ================= -->
+<section class="section section-alt" id="services">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">What we handle</span>
+      <h2>Support for every step of the journey.</h2>
+      <p>We work with your team to make applications, assessments, evaluations and selection decisions easier to coordinate.</p>
+    </div>
+
+    <div class="grid grid-3">
+      <article class="card feature-card reveal">
+        <span class="card-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M19 8v6M22 11h-6"/></svg></span>
+        <h3>Applications &amp; registration</h3>
+        <p>Collect applications, review submitted details and keep eligibility, documents and payment information organized.</p>
+      </article>
+      <article class="card feature-card reveal">
+        <span class="card-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="10" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg></span>
+        <h3>Clear team responsibilities</h3>
+        <p>Give coordinators, reviewers and applicants a clear place to see their tasks, information and next steps.</p>
+      </article>
+      <article class="card feature-card reveal">
+        <span class="card-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg></span>
+        <h3>Scheduling &amp; coordination</h3>
+        <p>Plan assessment dates, interviews, locations and time slots, then share schedules with everyone involved.</p>
+      </article>
+      <article class="card feature-card reveal">
+        <span class="card-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5V6a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v13.5"/><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M9 8h6M9 12h6"/></svg></span>
+        <h3>Assessment preparation</h3>
+        <p>Organize questions and materials, prepare assessment sessions and make sure each group has what it needs.</p>
+      </article>
+      <article class="card feature-card reveal">
+        <span class="card-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="m7 15 4-4 3 3 5-6"/></svg></span>
+        <h3>Evaluation &amp; selection</h3>
+        <p>Review submissions, apply your criteria consistently, shortlist applicants and keep decisions easy to follow.</p>
+      </article>
+      <article class="card feature-card reveal">
+        <span class="card-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="9" r="6"/><path d="m8.2 13.9-1.5 7.3 5.3-2.8 5.3 2.8-1.5-7.3"/></svg></span>
+        <h3>Results &amp; next steps</h3>
+        <p>Share outcomes, certificates and helpful progress summaries so participants know what happens next.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ================= WHO IT'S FOR ================= -->
+<section class="section audience-section" id="who-its-for">
+  <div class="wrap">
+    <div class="sec-head center reveal">
+      <span class="eyebrow">People first, always</span>
+      <h2>For the programs that <span class="grad">shape what's next.</span></h2>
+      <p>Whether you are welcoming new learners, assessing skills or choosing the right people, we help make the process easier to navigate.</p>
+    </div>
+    <div class="audience-grid">
+      <article class="audience-card audience-card-green reveal">
+        <div class="audience-art art-admissions" aria-hidden="true">
+          <span class="art-sun"></span><span class="art-paper"></span><span class="art-person"></span>
+          <span class="art-spark art-spark-one">✳</span><span class="art-spark art-spark-two">✦</span>
+        </div>
+        <div class="audience-content">
+          <span class="audience-kicker">01 / EDUCATION</span>
+          <h3>Admissions &amp; scholarships</h3>
+          <p>Give applicants a clearer path from application to the right learning opportunity.</p>
+          <a href="#contact">Make the process clearer <span aria-hidden="true">↗</span></a>
+        </div>
+      </article>
+      <article class="audience-card audience-card-violet reveal">
+        <div class="audience-art art-learning" aria-hidden="true">
+          <span class="art-ring"></span><span class="art-book art-book-one"></span><span class="art-book art-book-two"></span>
+          <span class="art-spark art-spark-one">✦</span><span class="art-spark art-spark-two">✳</span>
+        </div>
+        <div class="audience-content">
+          <span class="audience-kicker">02 / LEARNING</span>
+          <h3>Assessments &amp; certification</h3>
+          <p>Bring preparation, evaluation and learner updates together in one thoughtful journey.</p>
+          <a href="#contact">Support every step <span aria-hidden="true">↗</span></a>
+        </div>
+      </article>
+      <article class="audience-card audience-card-amber reveal">
+        <div class="audience-art art-selection" aria-hidden="true">
+          <span class="art-orbit art-orbit-one"></span><span class="art-orbit art-orbit-two"></span>
+          <span class="art-star">✦</span><span class="art-spark art-spark-one">✳</span><span class="art-spark art-spark-two">✦</span>
+        </div>
+        <div class="audience-content">
+          <span class="audience-kicker">03 / OPPORTUNITY</span>
+          <h3>Hiring &amp; talent selection</h3>
+          <p>Help teams review fairly, coordinate interviews and keep applicants informed.</p>
+          <a href="#contact">Find your next step <span aria-hidden="true">↗</span></a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ================= DEMO ================= -->
+<section class="section" id="demo">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">A simple preview</span>
+      <h2>See how the process <span class="grad">comes together.</span></h2>
+      <p>Explore a sample participant view and see how your team can keep applications and outcomes organized.</p>
+    </div>
+
+    <div class="demo-grid">
+      <div class="panel-card reveal">
+        <div class="panel-head">
+          <span class="panel-title">Participant results</span>
+          <span class="chip neutral">Public</span>
+        </div>
+        <form class="checker" id="resultForm" novalidate>
+          <label for="roll">Enter a participant name</label>
+          <div class="checker-row">
+            <input type="text" id="roll" placeholder="e.g. Aarav Sharma" autocomplete="off" spellcheck="false">
+            <button class="btn btn-primary btn-sm" type="submit">View outcome</button>
+          </div>
+          <p class="hint">Try a sample:
+            <button type="button" class="try" data-name="Aarav Sharma">Aarav</button>
+            <button type="button" class="try" data-name="Riya Iyer">Riya</button>
+            <button type="button" class="try" data-name="Mohammed Khan">Mohammed</button>
+            <button type="button" class="try" data-name="Sneha Nair">Sneha</button>
+          </p>
+        </form>
+        <div class="result-slot" id="resultSlot">
+          <div class="result-empty">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+            <p>A sample outcome will appear here.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="panel-card reveal">
+        <div class="panel-head">
+          <span class="panel-title">Team overview</span>
+          <span class="live-pill"><i></i>Live</span>
+        </div>
+        <div class="tabs" role="tablist">
+          <button class="tab active" data-tab="reg" role="tab">Registrations</button>
+          <button class="tab" data-tab="res" role="tab">Results</button>
+          <button class="tab" data-tab="cert" role="tab">Certificates</button>
+        </div>
+        <div class="tab-panel active" id="tab-reg">
+          <div class="rows">
+            <div class="row row-head"><span>Participant</span><span>Program</span><span>Status</span></div>
+            <div class="row"><span>A. Sharma</span><span>BE Level 2</span><span class="chip ok">Verified</span></div>
+            <div class="row"><span>R. Iyer</span><span>Cloud Cert</span><span class="chip warn">Pending</span></div>
+            <div class="row"><span>M. Khan</span><span>Data Sci L1</span><span class="chip ok">Verified</span></div>
+            <div class="row"><span>S. Nair</span><span>BE Level 2</span><span class="chip warn">Follow-up needed</span></div>
+          </div>
+        </div>
+        <div class="tab-panel" id="tab-res">
+          <div class="rows">
+            <div class="row row-head"><span>Participant</span><span>Score</span><span>Outcome</span></div>
+            <div class="row"><span>A. Sharma</span><span>88 / 100</span><span class="chip ok">Meets criteria</span></div>
+            <div class="row"><span>R. Iyer</span><span>34 / 100</span><span class="chip warn">Further review</span></div>
+            <div class="row"><span>M. Khan</span><span>76 / 100</span><span class="chip ok">Meets criteria</span></div>
+            <div class="row"><span>S. Nair</span><span>45 / 100</span><span class="chip ok">Meets criteria</span></div>
+          </div>
+        </div>
+        <div class="tab-panel" id="tab-cert">
+          <div class="rows">
+            <div class="row row-head"><span>Candidate</span><span>Certificate ID</span><span>Status</span></div>
+            <div class="row"><span>A. Sharma</span><span>Computer Engineering</span><span class="chip ok">Ready</span></div>
+            <div class="row"><span>M. Khan</span><span>Data Science</span><span class="chip ok">Ready</span></div>
+            <div class="row"><span>S. Nair</span><span>Computer Engineering</span><span class="chip warn">In progress</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PLATFORM TOUR ================= -->
+<section class="section section-alt" id="platform">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">Your team's workspace</span>
+      <h2>A clearer view of <span class="grad">everyday tasks.</span></h2>
+      <p>See how teams can review applications, coordinate evaluations and prepare certificates.</p>
+    </div>
+
+    <div class="tour" data-tour>
+      <div class="tour-tabs">
+        <button class="tour-tab active" data-tour-tab="dash">Dashboard</button>
+        <button class="tour-tab" data-tour-tab="regs">Registrations</button>
+        <button class="tour-tab" data-tour-tab="marks">Marks entry</button>
+        <button class="tour-tab" data-tour-tab="cert">Certificates</button>
+      </div>
+
+      <div class="tour-panels">
+        <div class="tour-panel active" data-tour-panel="dash">
+          <div class="tour-head">
+            <h4>Control center</h4>
+            <span class="chip neutral">All programs</span>
+          </div>
+          <div class="kpi-row">
+            <div class="kpi"><small>Active programs</small><b>38</b><span class="delta up">+4 today</span></div>
+            <div class="kpi"><small>Applications</small><b>12,480</b><span class="delta up">+312 this week</span></div>
+            <div class="kpi"><small>Completed reviews</small><b>87.4%</b><span class="delta up">+2.1 pts</span></div>
+            <div class="kpi"><small>Items to review</small><b>14</b><span class="delta warn">ready when you are</span></div>
+          </div>
+          <div class="bar-chart">
+            <div class="bar-row"><span>Cloud Foundations</span><div class="bar"><i style="width:94%"></i></div><b>94%</b></div>
+            <div class="bar-row"><span>BE Level 2</span><div class="bar"><i style="width:87%"></i></div><b>87%</b></div>
+            <div class="bar-row"><span>Data Sci L1</span><div class="bar"><i style="width:78%"></i></div><b>78%</b></div>
+            <div class="bar-row"><span>Advanced ML</span><div class="bar"><i style="width:62%"></i></div><b>62%</b></div>
+          </div>
+        </div>
+
+        <div class="tour-panel" data-tour-panel="regs">
+          <div class="tour-head"><h4>Application review</h4><span class="chip warn">14 to review</span></div>
+          <div class="rows">
+            <div class="row row-head"><span>Candidate</span><span>Centre</span><span>Status</span></div>
+            <div class="row"><span>P. Menon</span><span>Mumbai</span><span class="chip warn">Details needed</span></div>
+            <div class="row"><span>K. Reddy</span><span>Hyderabad</span><span class="chip ok">Reviewed</span></div>
+            <div class="row"><span>J. Dutta</span><span>Kolkata</span><span class="chip ok">Reviewed</span></div>
+            <div class="row"><span>A. Bose</span><span>Bengaluru</span><span class="chip warn">In progress</span></div>
+          </div>
+        </div>
+
+        <div class="tour-panel" data-tour-panel="marks">
+          <div class="tour-head"><h4>Evaluation review — Computer Engineering</h4><span class="chip neutral">Section A · 42 submissions</span></div>
+          <div class="marks-grid">
+            <div class="mark-card"><small>Q1</small><b>18 / 20</b></div>
+            <div class="mark-card"><small>Q2</small><b>16 / 20</b></div>
+            <div class="mark-card"><small>Q3</small><b>20 / 20</b></div>
+            <div class="mark-card"><small>Q4</small><b>14 / 20</b></div>
+            <div class="mark-card"><small>Q5</small><b>20 / 20</b></div>
+            <div class="mark-card total"><small>Total</small><b>88 / 100</b></div>
+          </div>
+          <div class="marks-actions">
+            <button class="btn btn-ghost btn-sm" type="button">Save draft</button>
+            <button class="btn btn-primary btn-sm" type="button">Submit for moderation</button>
+          </div>
+        </div>
+
+        <div class="tour-panel" data-tour-panel="cert">
+          <div class="tour-head"><h4>Certificate issuance</h4><span class="chip ok">QR enabled</span></div>
+          <div class="cert-list">
+            <div class="cert-item">
+              <div class="cert-ico">🏅</div>
+              <div><b>Computer Engineering</b><small>Aarav Sharma · Grade A</small></div>
+              <span class="chip ok">Verified</span>
+            </div>
+            <div class="cert-item">
+              <div class="cert-ico">🏅</div>
+              <div><b>Data Science</b><small>Mohammed Khan · Grade B</small></div>
+              <span class="chip ok">Verified</span>
+            </div>
+            <div class="cert-item">
+              <div class="cert-ico">📄</div>
+              <div><b>Computer Engineering</b><small>Sneha Nair · Grade D</small></div>
+              <span class="chip warn">Queued</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= ROLES ================= -->
+<section class="section" id="roles">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">A place for everyone involved</span>
+      <h2>Your whole team, <span class="grad">working in sync.</span></h2>
+      <p>Coordinators, reviewers and participants can each find the information and next steps that matter to them.</p>
+    </div>
+
+    <div class="grid grid-3">
+      <article class="card role-card reveal">
+        <span class="role-tag admin">Coordinators</span>
+        <h3>Your organizing team</h3>
+        <ul class="ticks">
+          <li>Plan assessments and timelines</li>
+          <li>Review applications and documents</li>
+          <li>Share decisions and results</li>
+          <li>Keep track of progress</li>
+        </ul>
+      </article>
+      <article class="card role-card reveal">
+        <span class="role-tag teacher">Reviewers</span>
+        <h3>Teachers &amp; selection panels</h3>
+        <ul class="ticks">
+          <li>See assigned submissions</li>
+          <li>Review and record evaluations</li>
+          <li>Request a second look when needed</li>
+          <li>Share feedback with coordinators</li>
+        </ul>
+      </article>
+      <article class="card role-card reveal">
+        <span class="role-tag student">Participants</span>
+        <h3>Applicants &amp; learners</h3>
+        <ul class="ticks">
+          <li>Apply and share required details</li>
+          <li>See schedules and updates</li>
+          <li>View outcomes and certificates</li>
+          <li>Ask questions or request a review</li>
+        </ul>
+      </article>
+    </div>
+
+    <div class="underhood reveal">
+      <div class="underhood-copy">
+        <span class="eyebrow">Hands-on support</span>
+        <h3>We help make the process easier.</h3>
+        <p>Our team works with you to understand your needs, organize each step and keep applicants and reviewers informed.</p>
+        <ul class="ticks">
+          <li>Plan a workflow that fits your organization</li>
+          <li>Coordinate applications, assessments and reviews</li>
+          <li>Keep decisions and updates easy to follow</li>
+          <li>Get help from setup through completion</li>
+        </ul>
+      </div>
+      <div class="service-steps">
+        <div><span>01</span><b>We listen</b><small>Understand your current process and goals.</small></div>
+        <div><span>02</span><b>We organize</b><small>Shape a clear plan for applications, reviews and decisions.</small></div>
+        <div><span>03</span><b>We support</b><small>Help your team keep things moving from start to finish.</small></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= INTEGRATIONS ================= -->
+<section class="section section-alt">
+  <div class="wrap">
+    <div class="sec-head center reveal">
+      <span class="eyebrow">How we can help</span>
+      <h2>Support that fits <span class="grad">your needs.</span></h2>
+      <p>Choose the steps where your team needs help, or ask us to support the complete process.</p>
+    </div>
+
+    <div class="integration-grid reveal">
+      <div class="int-card"><span>📝</span><b>Applications</b></div>
+      <div class="int-card"><span>📅</span><b>Scheduling</b></div>
+      <div class="int-card"><span>📋</span><b>Assessments</b></div>
+      <div class="int-card"><span>🔎</span><b>Evaluations</b></div>
+      <div class="int-card"><span>🎯</span><b>Shortlisting</b></div>
+      <div class="int-card"><span>📣</span><b>Updates &amp; outcomes</b></div>
+    </div>
+
+    <div class="center-cta reveal">
+      <p>Not sure where to start? We'll help you find the right next step.</p>
+      <a href="#contact" class="btn btn-ghost">Talk with our team →</a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= SECURITY ================= -->
+<section class="section" id="security">
+  <div class="wrap">
+    <div class="grid grid-2 center-v">
+      <div class="reveal">
+        <span class="eyebrow">Security &amp; compliance</span>
+        <h2 style="font-size:clamp(1.75rem,3vw,2.5rem);line-height:1.13;letter-spacing:-.03em;font-weight:800;margin-top:8px">
+          Your information deserves <span class="grad">thoughtful care.</span>
+        </h2>
+        <p style="color:var(--muted);margin-top:14px;font-size:15.5px">
+          We help your organization handle applications, evaluations and results respectfully,
+          and make sure information is shared with the right people.
+        </p>
+        <ul class="ticks" style="margin-top:20px">
+          <li>Information handled with care</li>
+          <li>Access limited to the people who need it</li>
+          <li>Privacy-minded processes</li>
+          <li>Ask us about your organization's requirements</li>
+        </ul>
+      </div>
+
+      <div class="badge-grid reveal">
+        <div class="badge-card"><b>Respect</b><small>For every participant</small></div>
+        <div class="badge-card"><b>Clarity</b><small>At each step</small></div>
+        <div class="badge-card"><b>Care</b><small>With your information</small></div>
+        <div class="badge-card"><b>Support</b><small>For your whole team</small></div>
+        <div class="badge-card"><b>Guidance</b><small>From start to finish</small></div>
+        <div class="badge-card"><b>Updates</b><small>People can understand</small></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= IMPACT STATS ================= -->
+<section class="section impact">
+  <div class="wrap">
+    <div class="impact-grid reveal">
+      <div class="impact-item">
+        <b>One team</b>
+        <small>By your side</small>
+      </div>
+      <div class="impact-item">
+        <b>Every step</b>
+        <small>Clearly organized</small>
+      </div>
+      <div class="impact-item">
+        <b>Clear updates</b>
+        <small>For participants</small>
+      </div>
+      <div class="impact-item">
+        <b>Ongoing help</b>
+        <small>When you need it</small>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= TESTIMONIALS ================= -->
+<section class="section section-alt" id="stories">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">Customer stories</span>
+      <h2>Teams making their processes <span class="grad">simpler.</span></h2>
+      <p>See how better coordination can make a difference for institutions and participants.</p>
+    </div>
+
+    <div class="grid grid-3">
+      <article class="testimonial reveal">
+        <div class="stars">★★★★★</div>
+        <p>“We used to spend days coordinating results. Now the steps are much clearer, and our team can focus on helping participants.”</p>
+        <div class="testimonial-author">
+          <span class="avatar">PM</span>
+          <div><b>Priya Menon</b><small>Program Coordinator · Northfield University</small></div>
+        </div>
+      </article>
+
+      <article class="testimonial reveal">
+        <div class="stars">★★★★★</div>
+        <p>“Everyone knows what they need to review and when. We spend less time chasing updates and more time supporting applicants.”</p>
+        <div class="testimonial-author">
+          <span class="avatar">RK</span>
+          <div><b>Rajan Krishnan</b><small>Dean of Academics · Meridian Institute</small></div>
+        </div>
+      </article>
+
+      <article class="testimonial reveal">
+        <div class="stars">★★★★★</div>
+        <p>“Sharing outcomes and certificates is much easier now. Applicants know where they stand and what to do next.”</p>
+        <div class="testimonial-author">
+          <span class="avatar">SF</span>
+          <div><b>Sana Fatima</b><small>Director · SkillCert India</small></div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CASE STUDY ================= -->
+<section class="section">
+  <div class="wrap">
+    <div class="case-study reveal">
+      <div class="case-copy">
+        <span class="eyebrow">Case study</span>
+        <h3>How TechGrad Academy made its selection process easier to manage.</h3>
+        <p>
+          TechGrad supported 6,000 applicants each year. With applications, reviews and updates spread across files,
+          the team spent days coordinating decisions and responding to questions.
+        </p>
+        <div class="case-metrics">
+          <div><b>-92%</b><small>Manual workload</small></div>
+          <div><b>40s</b><small>To share outcomes</small></div>
+          <div><b>One</b><small>Clear process</small></div>
+        </div>
+        <a href="#contact" class="btn btn-primary">Read the full story →</a>
+      </div>
+      <div class="case-visual">
+        <div class="case-row"><span>Before</span><div class="case-bar before"><i style="width:100%"></i></div><b>3 days</b></div>
+        <div class="case-row"><span>With support</span><div class="case-bar after"><i style="width:5%"></i></div><b>40 sec</b></div>
+        <div class="case-divider"></div>
+        <div class="case-row"><span>Manual workload</span><div class="case-bar before"><i style="width:100%"></i></div><b>100%</b></div>
+        <div class="case-row"><span>&nbsp;</span><div class="case-bar after"><i style="width:8%"></i></div><b>8%</b></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= HOW IT WORKS ================= -->
+<section class="section section-alt" id="how">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">Onboarding</span>
+      <h2>Getting started is <span class="grad">straightforward.</span></h2>
+      <p>We'll work with your team to understand what you need and guide you through each step.</p>
+    </div>
+    <div class="steps">
+      <div class="step reveal"><span class="step-num">01</span><h4>Tell us what you need</h4><p>We learn about your applications, assessments and selection goals.</p></div>
+      <div class="step reveal"><span class="step-num">02</span><h4>Plan the steps</h4><p>Together, we map out a clear process that works for your team.</p></div>
+      <div class="step reveal"><span class="step-num">03</span><h4>Get everything ready</h4><p>We help organize the details, materials, schedules and communications.</p></div>
+      <div class="step reveal"><span class="step-num">04</span><h4>Move forward with support</h4><p>Your team gets help as applications, reviews and decisions progress.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PRICING ================= -->
+<section class="section" id="pricing">
+  <div class="wrap">
+    <div class="sec-head center reveal">
+      <span class="eyebrow">Pricing</span>
+      <h2>Flexible support, <span class="grad">clear pricing.</span></h2>
+      <p>Choose support for a single program or ongoing help throughout the year.</p>
+    </div>
+
+    <div class="billing-toggle reveal">
+      <button class="active" data-billing="cycle">Per program</button>
+      <button data-billing="annual">Annual <span class="save-tag">save 20%</span></button>
+    </div>
+
+    <div class="grid grid-3 pricing">
+      <article class="card price-card reveal">
+        <h3>Starter</h3>
+        <p class="price"><span data-price-cycle="9900" data-price-annual="7920">₹9,900</span><em data-billing-label>/ cycle</em></p>
+        <p class="price-sub">For up to 500 participants</p>
+        <ul class="ticks">
+          <li>Application coordination</li>
+          <li>Assessment and outcome support</li>
+          <li>Progress summaries</li>
+          <li>Email assistance</li>
+        </ul>
+        <a href="#contact" class="btn btn-ghost btn-block">Get started</a>
+      </article>
+
+      <article class="card price-card featured reveal">
+        <span class="pop">Most popular</span>
+        <h3>Growth</h3>
+        <p class="price"><span data-price-cycle="24900" data-price-annual="19920">₹24,900</span><em data-billing-label>/ cycle</em></p>
+        <p class="price-sub">For up to 3,000 participants</p>
+        <ul class="ticks">
+          <li>Everything in Starter</li>
+          <li>Assessment preparation</li>
+          <li>Certificates and result sharing</li>
+          <li>Evaluation and shortlisting support</li>
+          <li>Priority assistance</li>
+        </ul>
+        <a href="#contact" class="btn btn-primary btn-block">Book a demo</a>
+      </article>
+
+      <article class="card price-card reveal">
+        <h3>Enterprise</h3>
+        <p class="price"><span>Custom</span></p>
+        <p class="price-sub">For larger organizations</p>
+        <ul class="ticks">
+          <li>Everything in Growth</li>
+          <li>Support tailored to your needs</li>
+          <li>Help with complex selection processes</li>
+          <li>Dedicated coordinator</li>
+          <li>Ongoing guidance for your team</li>
+        </ul>
+        <a href="#contact" class="btn btn-ghost btn-block">Talk to us</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ================= COMPARISON ================= -->
+<section class="section section-alt">
+  <div class="wrap">
+    <div class="sec-head center reveal">
+      <span class="eyebrow">Why ExamFlow</span>
+      <h2>A simpler way to manage <span class="grad">applications and decisions.</span></h2>
+    </div>
+
+    <div class="compare reveal">
+      <div class="compare-row head">
+        <span>Capability</span>
+        <span>Scattered tasks</span>
+        <span class="highlight">ExamFlow</span>
+      </div>
+      <div class="compare-row"><span>Applications kept organized</span><span class="no">✕</span><span class="yes">✓</span></div>
+      <div class="compare-row"><span>Clear review responsibilities</span><span class="no">✕</span><span class="yes">✓</span></div>
+      <div class="compare-row"><span>Consistent assessment and selection</span><span class="no">✕</span><span class="yes">✓</span></div>
+      <div class="compare-row"><span>Timely updates for participants</span><span class="no">✕</span><span class="yes">✓</span></div>
+      <div class="compare-row"><span>Results and next steps in one place</span><span class="no">✕</span><span class="yes">✓</span></div>
+      <div class="compare-row"><span>Help from a real support team</span><span class="no">✕</span><span class="yes">✓</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FAQ ================= -->
+<section class="section" id="faq">
+  <div class="wrap narrow">
+    <div class="sec-head reveal">
+      <span class="eyebrow">FAQ</span>
+      <h2>Questions we get <span class="grad">every week.</span></h2>
+    </div>
+
+    <div class="faq" id="faqList">
+      <details class="faq-item reveal"><summary>Can you help organize our existing applicant information?</summary><p>Yes. Tell us where your information is currently kept, and we'll help plan a practical way to bring it together and review it.</p></details>
+      <details class="faq-item reveal"><summary>Can you support assessments and selection?</summary><p>Yes. We can help coordinate assessment schedules, organize reviews, apply your criteria and keep shortlisting decisions clear.</p></details>
+      <details class="faq-item reveal"><summary>Can different reviewers work together?</summary><p>Yes. We help teams assign reviews, share relevant information and keep track of progress.</p></details>
+      <details class="faq-item reveal"><summary>Can you help with results and certificates?</summary><p>Yes. We can help prepare outcome updates and certificates and make sure participants know what to do next.</p></details>
+      <details class="faq-item reveal"><summary>Will someone guide us through the process?</summary><p>Yes. Our team works with you from the initial planning conversation through your program and its follow-up.</p></details>
+      <details class="faq-item reveal"><summary>Can support be tailored to our organization?</summary><p>Yes. We'll learn about your needs and recommend the right level of help for your team and participants.</p></details>
+    </div>
+  </div>
+</section>
+
+<!-- ================= RESOURCES / BLOG ================= -->
+<section class="section section-alt">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">Resources</span>
+      <h2>Helpful ideas for a <span class="grad">smoother process.</span></h2>
+      <p>Simple guidance for organizing applications, assessments, evaluations and selection decisions.</p>
+    </div>
+
+    <div class="grid grid-3">
+      <article class="blog-card reveal">
+        <div class="blog-thumb" style="background:linear-gradient(135deg,#6366f1,#22d3ee)">
+          <span class="blog-cat">Guide</span>
+          <span class="blog-emoji">🧭</span>
+        </div>
+        <div class="blog-body">
+          <h4>Bring application details together</h4>
+          <p>Practical ways to keep applicant information clear, complete and easy to review.</p>
+          <small>Helpful guide · Applications</small>
+        </div>
+      </article>
+      <article class="blog-card reveal">
+        <div class="blog-thumb" style="background:linear-gradient(135deg,#f472b6,#8b5cf6)">
+          <span class="blog-cat">Teamwork</span>
+          <span class="blog-emoji">🤝</span>
+        </div>
+        <div class="blog-body">
+          <h4>Make reviews easier for your team</h4>
+          <p>Help reviewers understand their responsibilities and keep decisions moving.</p>
+          <small>Helpful guide · Evaluations</small>
+        </div>
+      </article>
+      <article class="blog-card reveal">
+        <div class="blog-thumb" style="background:linear-gradient(135deg,#34d399,#0ea5e9)">
+          <span class="blog-cat">Participants</span>
+          <span class="blog-emoji">🌱</span>
+        </div>
+        <div class="blog-body">
+          <h4>Keep participants informed at every step</h4>
+          <p>Share clear updates so people know what to expect and what to do next.</p>
+          <small>Helpful guide · Communication</small>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FINAL CTA ================= -->
+<section class="final-cta">
+  <div class="wrap">
+    <div class="cta-inner reveal">
+      <h2>Ready to make your process easier?</h2>
+      <p>Tell us what your team is working on. We'll talk through your needs and show you how we can help.</p>
+      <div class="cta-actions">
+        <a href="#contact" class="btn btn-primary">Book a free demo</a>
+        <a href="#demo" class="btn btn-ghost">Explore a sample process</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CONTACT ================= -->
+<section class="section" id="contact">
+  <div class="wrap contact-grid">
+    <div class="contact-copy reveal">
+      <span class="eyebrow">Let's talk</span>
+      <h2>Let's make your process <span class="grad">easier together.</span></h2>
+      <p>Tell us about your applications, assessments or selection plans. We'll learn what you need and suggest helpful next steps.</p>
+      <ul class="contact-points">
+        <li><span class="tick-dot"></span>A friendly, no-pressure conversation</li>
+        <li><span class="tick-dot"></span>Practical guidance for your team</li>
+        <li><span class="tick-dot"></span>Support shaped around your needs</li>
+      </ul>
+      <div class="contact-mail">
+        <small>Or email us directly</small>
+        <a href="mailto:hello@examflow.dev">hello@examflow.dev</a>
+      </div>
+    </div>
+
+    <form class="card contact-form reveal" id="contactForm" novalidate>
+      <div class="field">
+        <label for="cName">Full name</label>
+        <input type="text" id="cName" placeholder="Priya Menon">
+        <span class="err" data-err="cName"></span>
+      </div>
+      <div class="field">
+        <label for="cEmail">Work email</label>
+        <input type="email" id="cEmail" placeholder="priya@institute.edu">
+        <span class="err" data-err="cEmail"></span>
+      </div>
+      <div class="field">
+        <label for="cOrg">Organisation</label>
+        <input type="text" id="cOrg" placeholder="Meridian Institute">
+        <span class="err" data-err="cOrg"></span>
+      </div>
+      <div class="field">
+        <label for="cService">What do you need?</label>
+        <select id="cService">
+          <option value="">Select a service</option>
+          <option>Applications and registration</option>
+          <option>Assessment planning and scheduling</option>
+          <option>Evaluation and shortlisting</option>
+          <option>Results and certificates</option>
+          <option>Help with the complete process</option>
+        </select>
+        <span class="err" data-err="cService"></span>
+      </div>
+      <div class="field">
+        <label for="cMsg">Message</label>
+        <textarea id="cMsg" rows="4" placeholder="Tell us what you would like to make easier…"></textarea>
+        <span class="err" data-err="cMsg"></span>
+      </div>
+      <button class="btn btn-primary btn-block" type="submit">Send request</button>
+      <p class="form-note" id="formNote" role="status"></p>
+    </form>
+  </div>
+</section>
+
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer-cta">
+      <div>
+        <h4>Helpful ideas for smoother assessments.</h4>
+        <p>Occasional practical guidance and updates to help your team and participants.</p>
+      </div>
+      <form class="newsletter" id="newsletterForm" novalidate>
+        <input type="email" id="nlEmail" placeholder="you@institute.edu" aria-label="Email address">
+        <button class="btn btn-primary btn-sm" type="submit">Subscribe</button>
+        <small id="nlNote" role="status"></small>
+      </form>
+    </div>
+
+    <div class="footer-grid">
+      <div>
+        <a class="brand" href="#home">
+          <span class="brand-mark">EF</span>
+          <span class="brand-text">ExamFlow<em>assessment support</em></span>
+        </a>
+        <p class="footer-note">Friendly support for applications, assessments, evaluations and selections.</p>
+      </div>
+      <div>
+        <h5>Platform</h5>
+        <a href="#services">Services</a><a href="#demo">Live demo</a>
+        <a href="#roles">Roles &amp; permissions</a><a href="#security">Security</a><a href="#pricing">Pricing</a>
+      </div>
+      <div>
+        <h5>Company</h5>
+        <a href="#how">How it works</a><a href="#stories">Customer stories</a>
+        <a href="#faq">FAQ</a><a href="#contact">Contact</a>
+      </div>
+      <div>
+        <h5>Trust</h5>
+        <a href="#security">Privacy &amp; care</a><a href="login.html">Sign in</a><a href="#contact">Get in touch</a>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <span>© <span id="year">2026</span> ExamFlow. All rights reserved.</span>
+      <span>Making applications, assessments and selections easier for everyone.</span>
+    </div>
+  </div>
+</footer>
+
+<button class="back-top" id="backTop" aria-label="Back to top" title="Back to top">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m18 15-6-6-6 6"/></svg>
+</button>
+
+<script src="script.js"></script>
+</body>
+</html>
